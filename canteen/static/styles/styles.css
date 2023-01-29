@@ -1,0 +1,106 @@
+#page-body {
+    background-image: url("./coffee-cup.png");
+    background-size: cover;
+    font-family:sans-serif;
+}
+
+#nav-bar {
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: rgba(252, 231, 125, 0.5);
+}
+
+.nav-element {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: xx-large;
+    color: #292826;
+}
+
+.title {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.fixed {
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-item {
+    flex-grow: 1;
+    min-width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text {
+    word-wrap: break-word;
+    font-size: large;
+}
+
+.field {
+    width: 97%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+label {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: large;
+    color: white;
+}
+
+.buttons {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 30px;
+}
+
+#login-div {
+    padding: 10px;
+    background-color: rgba(41, 40, 38, 0.5);
+    border-radius: 10px;
+    min-height: 500px;
+    padding-bottom: 20px;
+}
+
+#signup-div {
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: rgba(41, 40, 38, 0.5);
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+#welcome-div {
+    padding: 10px;
+    background-color: rgba(252, 231, 125, 0.5);
+    border-radius: 10px;
+    min-height: 500px;
+    color: #292826;
+    padding-bottom: 20px;
+}
+
+#welcome-title {
+    color: #292826;
+}
+
+input[type=submit] {
+    background-color: rgba(252, 231, 125, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
+}
