@@ -13,65 +13,17 @@
 <body id="page-body">
     <div id="nav-bar-div">
         <nav id="nav-bar">
-<<<<<<< HEAD
             <a id="nav-home" href="/">Home</a>
             <a id="nav-about" href="about">About</a>
             <a id="nav-menu" href="menu">Menu</a>
             <a id="nav-feedback" href="feedback">Feedback</a>
             <a id="nav-contact-us" href="contacts">Contact us</a>
+            <a id="nav-signup" href="signup">signup</a>
             <a id="nav-login" href="login">Login</a>
-=======
-            <a id="nav-home" href=" ">Home</a>
-            <a id="nav-about" href="about">About</a>
-            <a id="nav-menu" href="menu">Menu</a>
-            <a id="nav-feedback" href="feedback">Feedback</a>
->>>>>>> 63fad15315cb6aa0fa9b52c5a297a315b10ab6f0
         </nav>
     </div>
     <br>
     <div id="index-content">
-        <br>
-        <div class="table-cell" id="login-div">
-            <p class="title" id="login-title">Login</p>
-            
-            <form method="POST" class="form" id="login-form" action="user">
-                <!-- Security token -->
-                {% csrf_token %}
-            
-                <!-- Using the formset -->
-                {{ form.as_p }}
-                <label for="email-address">Enter email address:</label><br>
-                <input name="user" class="component" id="email-address" type="text"  placeholder="example.com.."><br>
-                <label for="password">Enter password:</label><br>
-                <input name="password" class="component" id="password" type="text"  placeholder="password"><br>
-                <div class="buttons-component" id="login-buttons">
-                    <input type="submit" id="student-login-submit" class="buttons"  value="Student Login">
-                </div>
-            </form>
-        </div>
-        <div class="table-cell" id="signup-div">
-            
-            <form method="POST" class="form" id="signup-form" action="add">
-                <p class="title" id="signup-title">Signup</p>
-                <!-- Security token -->
-                {% csrf_token %}
-            
-                <!-- Using the formset -->
-                {{ form.as_p }}
-                <label for="name">Enter name:</label><br>
-                <input class="component" id="name" type="text" name="user" placeholder="Example"><br>
-                <label for="email-address">Enter email address:</label><br>
-                <input class="component" id="email-address" type="text" name="email" placeholder="example.com.."><br>
-                <label for="password">Enter password:</label><br>
-                <input class="component" id="password" type="text" name="password" placeholder="example"><br>
-                <label for="re-enter-password">Re-enter password:</label><br>
-                <input class="component" id="re-enter-password" type="text" name="repass" placeholder="example"><br>
-                <div class="buttons-component" id="login-buttons">
-                    <input id="student-signup-submit" class="buttons" type="submit" value="Student Signup">
-                    <input id="admin-signup-submit" class="buttons" type="submit" value="Admin Signup">
-                </div>
-            </form>
-        </div>
         <div class="table-cell" id="welcome-div">
             <p class="title" id="welcome-title">Welcome!</p>
             <p class="text" id="welcome-content">This is our Canteen Management System, use this website to
