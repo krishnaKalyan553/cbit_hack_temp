@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="page-body">
+    <div id="nav-bar-div">
+        <nav id="nav-bar">
+            <a id="nav-home" href="index.html">Home</a>
+            <a id="nav-about" href="">About</a>
+            <a id="nav-menu" href="">Menu</a>
+            <a id="nav-feedback" href="">Feedback</a>
+            <a id="nav-contact-us" href="">Contact us</a>
+        </nav>
+    </div>
+    <br>
+    <div id="index-content">
+        <br>
+        <div class="table-cell" id="login-div">
+            <p class="title" id="login-title">Login</p>
+            <form class="form" id="login-form">
+                <label for="email-address">Enter email address:</label><br>
+                <input class="component" id="email-address" type="text" placeholder="example.com.."><br>
+                <label for="password">Enter password:</label><br>
+                <input class="component" id="password" type="text" placeholder="password"><br>
+                <div class="buttons-component" id="login-buttons">
+                    <input id="student-login-submit" class="buttons" type="submit" value="Student Login">
+                    <input id="admin-login-submit" class="buttons" type="submit" value="Admin Login">
+                </div>
+            </form>
+        </div>
+        <div class="table-cell" id="signup-div">
+            <p class="title" id="signup-title">Signup</p>
+            <form class="form" id="signup-form">
+                <label for="name">Enter name:</label><br>
+                <input class="component" id="name" type="text" placeholder="Example"><br>
+                <label for="email-address">Enter email address:</label><br>
+                <input class="component" id="email-address" type="text" placeholder="example.com.."><br>
+                <label for="password">Enter password:</label><br>
+                <input class="component" id="password" type="text" placeholder="example"><br>
+                <label for="re-enter-password">Re-enter password:</label><br>
+                <input class="component" id="re-enter-password" type="text" placeholder="example"><br>
+                <div class="buttons-component" id="login-buttons">
+                    <input id="student-signup-submit" class="buttons" type="submit" value="Student Signup">
+                    <input id="admin-signup-submit" class="buttons" type="submit" value="Admin Signup">
+                </div>
+            </form>
+        </div>
+        <div class="table-cell" id="welcome-div">
+            <p class="title" id="welcome-title">Welcome!</p>
+            <p class="text" id="welcome-content">This is our Canteen Management System, use this website to
+                order your canteen meals beforehand so you can avoid the wait
+                and enjoy your food warm and fresh!</p>
+        </div>
+    </div>
+</body>
+
+</html>
