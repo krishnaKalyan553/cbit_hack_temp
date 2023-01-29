@@ -23,6 +23,59 @@
             </select>
             <br>
             <br>
+            <a id="finish" href="thankyou">Finish!</a>
+        </div>
+    </div>
+</body>
+<script>
+    var amount = localStorage.getItem("cost");
+    document.getElementById("p2").innerHTML = amount;
+    function get() {
+        // (A) GET THE PARAMETERS
+        var params = new URLSearchParams(window.location.search),
+            first = params.get("first");
+
+
+        // (B) IT WORKS!
+        document.getElementById("p2").innerHTML = first;
+
+    }
+</script>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body id="payment-body">
+    <div id="nav-bar-div">
+        <nav id="nav-bar">
+            <a class="nav-element" id="nav-home" href="">Home</a>
+            <a class="nav-element" id="nav-about" href="">About</a>
+            <a class="nav-element" id="nav-menu" href="">Menu</a>
+            <a class="nav-element" id="nav-feedback" href="">Feedback</a>
+            <a class="nav-element" id="nav-contact" href="">Contact us</a>
+        </nav>
+    </div>
+    <div id="container-div">
+        <div id="payment-div">
+            <p>Your total amount:</p>
+            <input type="button" value="Get" onclick="get()" />
+            <p id="p2"></p>
+            <p>Payment options:</p>
+            <select id="dropdown" required>
+                <option value="1">Select</option>
+                <option value="2">Gpay</option>
+                <option value="3">Phonepe</option>
+                <option value="4">COD</option>
+            </select>
+            <br>
+            <br>
             <a id="finish" href="Thankyou.html">Finish!</a>
         </div>
     </div>
