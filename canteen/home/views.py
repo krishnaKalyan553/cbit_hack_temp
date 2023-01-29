@@ -39,4 +39,24 @@ def user(request):
         return render(request,'user.html',{"name":username})
     return render(request,'user.html',{"name":"unknown"})
     
+
+def about(request):
+    return render(request,"about.html")
+
+
+
+def feedback(request):
+    return render(request,"feedback.html")
+
+
+def menu(request):
+    return render(request,"menu.html")
+
+def cart(request):
+    return render(request,"cart.html")
+
+    
+def payment(request):
+    return render(request,"payment.html")
+
     
