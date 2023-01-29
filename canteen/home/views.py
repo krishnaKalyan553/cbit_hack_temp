@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.utils.datastructures import MultiValueDictKeyError
+
 
 from .models import *
 m=Authen()
@@ -11,14 +13,28 @@ def login(request):
 def signup(request):
     return render(request,"signup1.html")
 def add(request):
-    name=request.GET['user']
-    pas=request.GET['password']
+    try:
+        name=request.GET['user']
+    except MultiValueDictKeyError:
+        name = False
+    try:
+        pas=request.GET['password']
+    except MultiValueDictKeyError:
+        pas= False
+    
+    
     m.insert(name,pas)
     return HttpResponse("registered successfully")
     
 def user(request):
-    username = request.POST["user"]
-    password  = request.POST["password"]
+    try:
+        username = request.POST['user']
+    except MultiValueDictKeyError:
+        username = False
+    try:
+        password  = request.POST['password']
+    except MultiValueDictKeyError:
+        password= False
     if m.isvalid(username,password):
         return render(request,'user.html',{"name":username})
     return render(request,'user.html',{"name":"unknown"})
