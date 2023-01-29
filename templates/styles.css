@@ -1,7 +1,12 @@
 #page-body {
     background-image: url("./coffee-cup.png");
     background-size: cover;
-    font-family:sans-serif;
+    font-family: sans-serif;
+}
+
+#payment-body {
+    font-family: sans-serif;
+    background-color: #292826;
 }
 
 #nav-bar {
@@ -103,4 +108,42 @@ input[type=submit] {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: large;
+}
+
+#container-div {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(252, 231, 125, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#payment-div {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    padding: 30px;
+}
+
+input[value=Get] {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    min-width: 100px;
+}
+
+#dropdown {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#finish {
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #292826;
 }
