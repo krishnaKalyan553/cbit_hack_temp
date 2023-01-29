@@ -1,10 +1,9 @@
-#page-body {
+body {
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
     'Helvetica Neue', sans-serif;
-    background-color: lightblue;
+    background-color: lightcyan;
 }
-
 #nav-bar {
     text-align: center;
 }
@@ -52,6 +51,7 @@ a {
     padding: 5px;
     padding-bottom: 125px;
     background-color: #d3d3d3;
+    min-height: 210px;
 }
 
 #login-title {
@@ -74,9 +74,11 @@ a {
 }
 
 .text {
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 5px;
     background-color: #d3d3d3;
+    min-height: 330px;
+    vertical-align: middle;
 }
 
 .nav {
