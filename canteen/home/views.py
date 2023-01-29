@@ -12,16 +12,16 @@ def login(request):
 def signup(request):
     return render(request,"signup1.html")
 def add(request):
-    name=request.GET['usr']
-    pas=request.GET['pswd']
+    name=request.GET['user']
+    pas=request.GET['password']
     m.insert(name,pas)
     return render(request,'login.html')
     
 def user(request):
-    username = request.POST['name']
-    password  = request.POST['pas']
-    if m.isvalid(username,password):
-        return render(request,'user.html',{"name":username})
+    name=request.GET['user']
+    pas=request.GET['password']
+    if m.isvalid(name,pas):
+        return render(request,'user.html',{"name":name})
     else:
         return render(request,'signup1.html')
 def review(request):

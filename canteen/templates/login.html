@@ -34,13 +34,13 @@
       </div>
     </nav>
     
-    <form method="POST"  action='user'>
+    <form method="GET"  action='user'>
         <!-- Security token -->
         {% csrf_token %}
         <!-- Using the formset -->
         {{ form.as_p }}
-         user :<input name="name" >
-         pswd :<input name='pas' >
+         user :<input name="user" >
+         pswd :<input name='password' >
         <input type="submit" value="login">
     </form>
   </body>
