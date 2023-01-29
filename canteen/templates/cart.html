@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:canteen/templates/cart.html
 <html>
 <style>
     #nav-bar {
@@ -68,3 +70,159 @@ function go () {
 
 </script>
 </html>
+========
+=======
+<<<<<<< HEAD:canteen/templates/cart.html
+<html>
+<style>
+    #nav-bar {
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: rgba(252, 231, 125, 0.5);
+}
+.nav-element {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: xx-large;
+    color: #292826;
+}
+input {
+    height:40px;
+    width:200px;
+    font-weight:bold;
+    font-size: large;
+}
+</style>
+<body bgcolor="#b04d4d">
+    <div id="nav-bar-div">
+        <nav id="nav-bar">
+            <a class="nav-element" id="nav-home" href="">Home</a>
+            <a class="nav-element" id="nav-about" href="">About</a>
+            <a class="nav-element" id="nav-menu" href="">Menu</a>
+            <a class="nav-element" id="nav-feedback" href="">Feedback</a>
+            <a class="nav-element" id="nav-contact" href="">Contact us</a>
+        </nav>
+    </div>
+<p id="p1" style="font-size:40px";></p>
+<input type="button" value="pay bill" onclick="go()"/>
+</body>
+<script>
+var s="";
+var total=0;
+var d={"Dosa":50,"Idly":40,"Upma":50,"Sambar Vada":55,"Our combo special":60,"Veg fried rice":150,"Thali":80,"Chapathi Curry":60,"Special Combo":100,"Paneer Tikka Masala":150,"Chicken Biryani":150,"Sandwich":50,"Chips":20,"Ice cream":50,"Cookies":30,"Chocolates":20};
+for(const key in localStorage)
+{
+if(localStorage.hasOwnProperty(key)==true)
+{
+
+s+=key+":"+(parseInt(d[key.toString()])*parseInt(localStorage.getItem(key))).toString()+"<br>";
+total+=parseInt(d[key.toString()])*parseInt(localStorage.getItem(key));
+}
+
+}
+s+="total:"+total;
+document.getElementById("p1").innerHTML=s;
+function go () {
+      // (A) VARIABLES TO PASS
+      var first = total;
+          
+    
+      // (B) URL PARAMETERS
+      var params = new URLSearchParams();
+      params.append("first", first);
+     
+    
+      // (C) GO!
+      var url = "payment?" + params.toString();
+      location.href = url;
+      // window.open(url);
+    }
+
+</script>
+</html>
+=======
+>>>>>>> 63fad15315cb6aa0fa9b52c5a297a315b10ab6f0
+<html>
+<style>
+    #nav-bar {
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
+    background-color: rgba(252, 231, 125, 0.5);
+}
+.nav-element {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: xx-large;
+    color: #292826;
+}
+input {
+    height:40px;
+    width:200px;
+    font-weight:bold;
+    font-size: large;
+}
+</style>
+<body bgcolor="#b04d4d">
+    <div id="nav-bar-div">
+        <nav id="nav-bar">
+            <a class="nav-element" id="nav-home" href="">Home</a>
+<<<<<<< HEAD
+        <a class="nav-element" id="nav-about" href="">About</a>
+        <a class="nav-element" id="nav-menu" href="">Menu</a>
+        <a class="nav-element" id="nav-feedback" href="">Feedback</a>
+        <a class="nav-element" id="nav-contact" href="">Contact us</a
+=======
+            <a class="nav-element" id="nav-about" href="">About</a>
+            <a class="nav-element" id="nav-menu" href="">Menu</a>
+            <a class="nav-element" id="nav-contact" href="">Contact us</a>
+>>>>>>> 63fad15315cb6aa0fa9b52c5a297a315b10ab6f0
+        </nav>
+    </div>
+<p id="p1" style="font-size:40px";></p>
+<input type="button" value="GO" onclick="go()"/>
+</body>
+<script>
+var s="";
+var total=0;
+var d={"Dosa":50,"Idly":40,"Upma":50,"Sambar Vada":55,"Our combo special":60,"Veg fried rice":150,"Thali":80,"Chapathi Curry":60,"Special Combo":100,"Paneer Tikka Masala":150,"Chicken Biryani":150,"Sandwich":50,"Chips":20,"Ice cream":50,"Cookies":30,"Chocolates":20};
+for(const key in localStorage)
+{
+if(localStorage.hasOwnProperty(key)==true)
+{
+
+s+=key+":"+(parseInt(d[key.toString()])*parseInt(localStorage.getItem(key))).toString()+"<br>";
+total+=parseInt(d[key.toString()])*parseInt(localStorage.getItem(key));
+}
+
+}
+s+="total:"+total;
+document.getElementById("p1").innerHTML=s;
+function go () {
+      // (A) VARIABLES TO PASS
+      var first = total;
+          
+    
+      // (B) URL PARAMETERS
+      var params = new URLSearchParams();
+      params.append("first", first);
+     
+    
+      // (C) GO!
+      var url = "payment.html?" + params.toString();
+      location.href = url;
+      // window.open(url);
+    }
+
+</script>
+</html>
+<<<<<<< HEAD
+>>>>>>>> 63fad15315cb6aa0fa9b52c5a297a315b10ab6f0:templates/Cart.html
+=======
+>>>>>>> 1d847e877e6e7897d7c2eeb7346e2ff4f492036d:templates/Cart.html
+>>>>>>> 63fad15315cb6aa0fa9b52c5a297a315b10ab6f0
