@@ -1,0 +1,11 @@
+<form method="POST" enctype="multipart/form-data" action='signup'>
+ 
+    <!-- Security token -->
+    {% csrf_token %}
+ 
+    <!-- Using the formset -->
+    {{ form.as_p }}
+     user :<input name='uname' >
+     pswd :<input name='pswd' >
+    <input type="submit" value="Submit">
+</form>
