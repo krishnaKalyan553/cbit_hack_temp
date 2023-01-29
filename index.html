@@ -21,37 +21,42 @@
     </div>
     <br>
     <div id="index-content">
-        <div id="login-div">
-            <p id="login-title">Login</p>
-            <form id="login-form">
+        <br>
+        <div class="float-left" id="login-div">
+            <p class="title" id="login-title">Login</p>
+            <form class="form" id="login-form">
                 <label for="email-address">Enter email address:</label><br>
-                <input id="email-address" type="text" placeholder="example.com.."><br>
+                <input class="component" id="email-address" type="text" placeholder="example.com.."><br>
                 <label for="password">Enter password:</label><br>
-                <input id="password" type="text" placeholder="password"><br>
-                <input id="student-login-submit" type="submit" value="Login as Student">
-                <input id="admin-login-submit" type="submit" value="Login as Admin">
+                <input class="component" id="password" type="text" placeholder="password"><br>
+                <div class="buttons-component" id="login-buttons">
+                    <input id="student-login-submit" class="buttons" type="submit" value="Student Login">
+                    <input id="admin-login-submit" class="buttons" type="submit" value="Admin Login">
+                </div>
             </form>
         </div>
-        <div id="signup-div">
-            <p id="signup-title">Signup</p>
-            <form id="signup-form">
+        <div class="float-left" id="signup-div">
+            <p class="title" id="signup-title">Signup</p>
+            <form class="form" id="signup-form">
                 <label for="name">Enter name:</label><br>
-                <input id="name" type="text" placeholder="Example"><br>
+                <input class="component" id="name" type="text" placeholder="Example"><br>
                 <label for="email-address">Enter email address:</label><br>
-                <input id="email-address" type="text" placeholder="example.com.."><br>
+                <input class="component" id="email-address" type="text" placeholder="example.com.."><br>
                 <label for="password">Enter password:</label><br>
-                <input id="password" type="text" placeholder="example"><br>
+                <input class="component" id="password" type="text" placeholder="example"><br>
                 <label for="re-enter-password">Re-enter password:</label><br>
-                <input id="re-enter-password" type="text" placeholder="example"><br>
-                <input id="student-signup-submit" type="submit" value="Signup as Student">
-                <input id="admin-signup-submit" type="submit" value="Signup as Admin">
+                <input class="component" id="re-enter-password" type="text" placeholder="example"><br>
+                <div class="buttons-component" id="login-buttons">
+                    <input id="student-signup-submit" class="buttons" type="submit" value="Student Signup">
+                    <input id="admin-signup-submit" class="buttons" type="submit" value="Admin Signup">
+                </div>
             </form>
         </div>
         <div id="welcome-div">
-            <p id="welcome-title">Welcome!</p>
-            <p id="welcome-content">This is our Canteen Management System, 
-                use this website to order your canteen meals beforehand so 
-                you can avoid the wait and enjoy your food warm and fresh!</p>
+            <p class="title" id="welcome-title">Welcome!</p>
+            <p class="text" id="welcome-content">This is our Canteen Management System, use this website to
+                order your canteen meals beforehand so you can avoid the wait
+                and enjoy your food warm and fresh!</p>
         </div>
     </div>
 </body>
