@@ -7,7 +7,6 @@ from .models import *
 m=Authen()
 def home(request):
     return render(request,"home.html")
-
 def login(request):
     return render(request,"login.html")
 def signup(request):
@@ -24,7 +23,7 @@ def add(request):
     
     
     m.insert(name,pas)
-    return HttpResponse("registered successfully")
+    return render(request,'login.html')
     
 def user(request):
     try:
@@ -38,5 +37,19 @@ def user(request):
     if m.isvalid(username,password):
         return render(request,'user.html',{"name":username})
     return render(request,'user.html',{"name":"unknown"})
+def cart(request):
+    return render(request,'cart.html')
+def about(request):
+    return render(request,'about.html')
+def contacts(request):
+    return render(request,'contacts.html')
+def menu(request):
+    return render(request,'menu.html')
+def feedback(request):
+    return render(request,'feedback.html')
+def payment(request):
+    return render(request,'payment.html')
+def thankyou(request):
+    return render(request,'thankyou.html')
     
     
